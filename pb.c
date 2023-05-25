@@ -206,8 +206,8 @@ void proto_bug_assert_valid_debug_header(struct proto_bug *self, enum encoding_t
     if ((received_encoding_type != expected_encoding_type) || ((name_size != strlen(name) || (strcmp(received_name, name)))))
     {
         assertion_fail_message[sprintf(assertion_fail_message, "proto_bug exception: read/write debug informaiton does not match.\n"
-                                                               "expected:    encoding_type: %s\tname: %s\twritten_at: %s:%u\n"
-                                                               "encountered: encoding_type: %s\tname: %s\t   read_at: %s:%u\n",
+                                                               "expected:    encoding_type: %s\tname: %s\t   read_at: %s:%u\n"
+                                                               "encountered: encoding_type: %s\tname: %s\twritten_at: %s:%u\n",
                                        get_encoding_type_string(expected_encoding_type), name         , file         , line,
                                        get_encoding_type_string(received_encoding_type), received_name, received_file, received_line)] = 0;
 
