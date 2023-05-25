@@ -44,7 +44,7 @@ The error message consists of two parts:
 1. **Expected**: `   encoding_type: float32        name: x position        written_at: example.c:21`: This part represents the expected value or data type that the program attempted to read.
 2. **Encountered**: `encoding_type: float32        name: y position           read_at: example.c:35`: This part represents the actual value or data type that was encountered during the read operation.
 
-# You might want to disable error verbose errors in production for several reasons:
+### You might want to disable error verbose errors in production for several reasons:
 1. With verbose error messages, it uses on average 8x more memory to store the debug information within the proto_bug bounds
 2. It requires that the proto_bug struct contains a lot of debug information, such as file names and file lines, as well as the "name" of the value that the user reads/writes nside the message to send off to the clients
 
