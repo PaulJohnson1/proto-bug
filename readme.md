@@ -48,6 +48,6 @@ The error message consists of two parts:
 1. With verbose error messages, it uses on average 8x more memory to store the debug information within the proto_bug bounds
 2. It requires that the proto_bug struct contains a lot of debug information, such as file names and file lines, as well as the "name" of the value that the user reads/writes nside the message to send off to the clients
 
-## Disabling errors
+### Disabling errors
 - Errors are automatically disabled if the `NDEBUG` macro is defined as long as `PROTO_BUG_FORCE_DEBUG` is not defined
 - Errors can be explicitly disabled if the `PROTO_BUG_NDEBUG` macro is defined
